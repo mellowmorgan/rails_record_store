@@ -19,6 +19,7 @@ class AlbumsController < ApplicationController
       flash[:notice] = "Album successfully added!"
       redirect_to albums_path
     else
+      flash[:alert] = "Album addition failed!"
       render :new
     end
   end
@@ -39,8 +40,10 @@ class AlbumsController < ApplicationController
     # Code for updating an album goes here.
     @album = Album.find(params[:id])
     if @album.update(album_params)
+      flash[:notice] = "Album successfully updated!"
       redirect_to albums_path
     else
+      flash[:alert] = "Album update failed!"
       render :edit
     end
   end
