@@ -48,5 +48,3 @@
 If you have any issues, questions, ideas or concerns, please reach out to me at my email and/or make a contribution to the code via GitHub.  
 
 Copyright (c) 2021 Frank Proulx, Drew Henderson, Morgan Waites
-
-![image_of_database_schema](./record_store_schema.png)
